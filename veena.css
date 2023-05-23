@@ -1,0 +1,224 @@
+
+  
+    body{
+        margin: 0;
+              
+    }
+   /*  header tab*/
+    #header
+    {
+        background-color: rgb(0, 64, 128);
+        display:flex;
+        box-shadow: 10px 10px 10px black;
+        height: 45px;
+    }
+
+      /* items-hamburgericon, logo */ 
+    .item
+    {
+    
+        justify-items: flex-end;
+        align-self:center;
+    }
+    /* title -header tab */
+    .item-center
+    {
+        flex-grow: 2;
+        justify-content: center;
+        align-self: center;
+    }
+      /* text header tab */  
+    h2{
+    
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    }
+/* toggle btn */
+#btn
+{
+  cursor: pointer;
+  background: transparent;
+  border: none;
+   
+}
+/* body of the page except header */
+.maincontent
+{
+    display:flex;
+    margin: auto;
+    height:100%;
+    flex-direction: column;
+    justify-content: center;
+}
+/* side navigation bar */
+  .leftmenu{
+    display: none;
+  }
+  
+  /* navigation bar elements */
+.leftmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(0, 64, 128) ;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    
+     }
+  
+     /* nav bar individual elements css style*/
+  li a {
+    
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display:block
+       
+  }
+  
+  li a.active {
+    background-color:#555;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+
+    color: white;
+  }
+  /* canoe image container*/
+  #image 
+  { 
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    justify-content: center;
+    margin-top: 2px;
+    z-index: -1;
+    
+
+  }
+  /* image */
+ #image img{
+    width: 1200px;
+    }
+    
+/* Centered text */
+.centered {
+    top: 20%;
+    left: 40%;
+    color: azure;
+    font-size: 30px;
+    position: absolute;
+}
+  .centered p{
+    text-align: center;
+  }
+  
+    .textcontent
+    {
+        
+    display:flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-self:left;
+    flex-direction: column;
+    justify-content: center;
+    
+        
+    }
+  .article-header
+  {
+    
+    font-size: 30px;
+    padding-left:0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(165, 158, 158);
+    text-align: left;
+    font-weight: bold;
+    margin:15px 0 15px 5px;
+
+
+  }
+  ul{
+    padding-left: 5px;
+    margin: 0;
+    list-style: none;
+  }
+  .city
+  {
+    color:rgb(22, 162, 46) ;
+    padding-left:  5px;
+    font-size: 25px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    text-align: left;
+    margin-bottom: 5px;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(22, 162, 46);
+    text-transform: capitalize;
+
+
+   
+      }
+  #summary
+  {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    text-align: left;
+    margin:0;
+  }
+  p{
+    padding-left: 5px;
+    text-align: left;
+    margin-top: auto;
+    display: block;
+    align-self: left;
+    overflow-wrap: break-word;
+
+  }
+  table{
+    padding-top:0px;
+  }
+/* css style for screen max 800px*/
+  @media screen and (max-width: 800px) {
+    li a,.article-header {
+      font-size: 25px;
+    }
+    
+    #summary {
+      font-size:15px;
+    }
+    .textcontent
+    {
+      margin: 0;
+    }
+    p ,ul
+    {
+      font-size: 12px;
+     }
+     .city{
+      font-size: 20px;
+
+     }
+     .centered p
+     {
+      font-size: 30px;
+     }
+      }
+      /* css style for screen max 1200px */
+      @media screen and (max-width:1200px) {
+
+     .textcontent
+    {
+        
+        margin:0;
+      }}

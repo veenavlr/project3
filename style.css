@@ -1,0 +1,54 @@
+
+body{
+    margin: 0;
+          
+}
+/*  header tab*/
+#header
+{
+    background-color: rgb(0, 64, 128);
+    display:flex;
+    box-shadow: 10px 10px 10px black;
+    height: 45px;
+}
+
+  /* items-hamburgericon, logo */ 
+.item
+{
+
+    justify-items: flex-end;
+    align-self:center;
+}
+/* title -header tab */
+.item-center
+{
+    flex-grow: 2;
+    justify-content: center;
+    align-self: center;
+}
+  /* text header tab */  
+h2{
+
+color: white;
+text-align: center;
+margin-bottom: 0;
+margin-top: 0;
+
+}
+/* toggle btn */
+#btn
+{
+cursor: pointer;
+background: transparent;
+border: none;
+
+}
+
+.container
+{
+    background-color:rgb(209, 188, 161);  
+    align-self:center;
+    padding:75px 75px;
+    margin:20px 350px;
+    justify-self: center;
+}
